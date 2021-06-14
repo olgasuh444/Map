@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-
-
 // Name and Password from the register-form
 let name = document.getElementById('name');
 let pw = document.getElementById('pw');

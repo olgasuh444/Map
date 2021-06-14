@@ -1,5 +1,5 @@
 import React from 'react';
-import initMap from './map';
+
 import logo from './map.png';
 import './App.css';
 
@@ -10,7 +10,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Эх, прокачу</h1>
-        <div className="Register"><span>вход</span>/<span>регистрация</span></div>
+        <div className="Register popup" onclick="myFunction()">
+          <a data-fancybox data-src="#modal" href="javascript:;" class="header_btn" href="#"><span>вход</span>/<span>регистрация</span>
+          </a>
+        </div>
+
       </header>
       <main className="Users-nav">
         <div className="user-nav">
@@ -26,7 +30,7 @@ function App() {
         </div>
         <div className="map">
 
-          {/* `{initMap()}`; */}
+
         </div>
 
 

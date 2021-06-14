@@ -1,11 +1,22 @@
-<form id="register-form">
-    <input id="name" type="text" placeholder="Name" value="" />
-    <input id="pw" type="password" placeholder="Password" value="" />
-    <input id="rgstr_btn" type="submit" value="get Account" onClick="store()" />
-</form>
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+        let popup = document.getElementById("modal");
+        popup.classList.toggle("show");
+    }
+</script>
 
-<form id="login-form">
-    <input id="userName" type="text" placeholder="Enter Username" value="" />
-    <input id="userPw" type="password" placeholder="Enter Password" value="" />
-    <input id="login_btn" type="submit" value="Login" onClick="check()" />
-</form>
+<div id="modal">
+
+    <form id="register-form">
+        <input id="name" type="text" placeholder="Name" value="" />
+        <input id="pw" type="password" placeholder="Password" value="" />
+        <input id="rgstr_btn" type="submit" value="get Account" onClick="store()" />
+    </form>
+
+    <form id="login-form">
+        <input id="userName" type="text" placeholder="Enter Username" value="" />
+        <input id="userPw" type="password" placeholder="Enter Password" value="" />
+        <input id="login_btn" type="submit" value="Login" onClick="check()" />
+    </form>
+</div>
