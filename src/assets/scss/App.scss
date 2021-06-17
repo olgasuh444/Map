@@ -1,0 +1,22 @@
+$bg-color: rgb(247, 247, 212);
+$border-color: rgb(163, 163, 163);
+
+.app {
+  font-family: helvetica, arial, sans-serif;
+  padding: 2em;
+  border: 5px solid $border-color;
+  width: 1400px;
+  margin: 0 auto;
+
+  p {
+    background-color: $bg-color;
+  }
+}
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.user-nav{
+  font-size: 24px;
+  margin-bottom: 15px;
+}
