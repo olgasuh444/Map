@@ -1,6 +1,18 @@
-
+import React from 'react';
 import { compose, withProps } from "recompose";
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, } from "react-google-maps";
+
+const getLocation = () => {
+    navigator.geolocation.getCurrentPosition(function (position) {
+        const [lat, setLat] = React.useState(0);
+        const [lng, setLng] = React.useState(0);
+        position.coords.latitude;
+        position.coords.longitude;
+    });
+}
+<button onClick={getLocation}>
+
+</button>
 
 
 const MyMapComponent = compose(
@@ -14,6 +26,8 @@ const MyMapComponent = compose(
     withGoogleMap,
 
 )((props) =>
+
+
     <GoogleMap
         defaultZoom={12}
         defaultCenter={{ lat: 49.23, lng: 28.43 }}
